@@ -8,10 +8,16 @@ body {
 body p,
 .xwin-score,
 .owin-score {
-  color: #b2bec3;
+  color: #ff7675;
 }
 
-.xwin-score {
+.xwin-score,
+.owin-score {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.owin-score {
   margin-right: 3em;
 }
 
@@ -48,19 +54,10 @@ h1 span {
 
 .large-grid-container,
 .grid-container {
-  /* display: grid;
-  margin: 30px auto 50px auto;
-  background-color: #d63031;
-  padding: 10px; */
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   max-width: 800px;
-}
-
-.grid-container {
-  /* grid-template-columns: repeat(3, auto);
-  width: 425px; */
 }
 
 .large-grid-container {
@@ -74,7 +71,6 @@ h1 span {
   justify-content: center;
   align-items: center;
   background-color: rgba(255, 255, 255, 0.8);
-  /* padding: 20px; */
   border: 1px solid #00b894;
   cursor: pointer;
 }
@@ -107,6 +103,9 @@ h1 span {
   background-color: rgba(255, 255, 255, 0.8);
   border: 1px solid #00b894;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .large-grid-item {
@@ -159,7 +158,7 @@ h1 span {
 
 .o-move,
 .x-move {
-  font-size: 46px;
+  font-size: 40px;
 }
 
 .o-move {
